@@ -11,11 +11,11 @@
 
     <properties>
 
-        <java.vercsion>8</java.vercsion>
+        <java.vercsion>11</java.vercsion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <!-- Spring-boot-starter-parent - это специальный стартер, который обеспечивает значения по умолчанию Maven.
@@ -107,8 +107,6 @@
     </dependencies>
     <build>
         <plugins>
-            <!-- Java 8 source and target settings-->
-            <!-- deployment section, taken from official example -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -129,6 +127,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
     <packaging>maven-plugin</packaging>
