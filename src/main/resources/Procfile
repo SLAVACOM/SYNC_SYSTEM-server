@@ -1,2 +1,1 @@
-mvn clean install -U
 web: java -jar target/LibrarySpring:1.0-SNAPSHOT.jar
