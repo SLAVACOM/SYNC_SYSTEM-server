@@ -5,8 +5,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>LibrarySpring</artifactId>
+    <groupId>com.samsung</groupId>
+    <artifactId>sync-server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -103,6 +103,31 @@
             <scope>test</scope>
         </dependency>
 
+
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.samsung</groupId>
+                <artifactId>sync-server</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                        <configuration>
+                            <additionalProperties>
+                                <encoding.source>${project.build.sourceEncoding}</encoding.source>
+                                <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
+                                <java.source>${maven.compiler.source}</java.source>
+                                <java.target>${maven.compiler.target}</java.target>
+                            </additionalProperties>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
