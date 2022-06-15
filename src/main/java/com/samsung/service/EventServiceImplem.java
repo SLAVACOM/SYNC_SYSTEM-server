@@ -20,7 +20,7 @@ public class EventServiceImplem implements EventService{
 
     @Override
     public List<Event> getAll() {
-        return eventRep.findAll();
+        return eventRep.findAllByOrderById();
     }
 
     @Override
