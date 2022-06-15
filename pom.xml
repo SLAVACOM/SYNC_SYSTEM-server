@@ -5,17 +5,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.samsung</groupId>
-    <artifactId>sync-server</artifactId>
-    <version>1.0</version>
+    <groupId>org.example</groupId>
+    <artifactId>LibrarySpring</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
-
-        <java.vercsion>11</java.vercsion>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <!-- Spring-boot-starter-parent - это специальный стартер, который обеспечивает значения по умолчанию Maven.
@@ -103,34 +99,6 @@
             <scope>test</scope>
         </dependency>
 
-
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build-info</goal>
-                        </goals>
-                        <configuration>
-                            <additionalProperties>
-                                <encoding.source>${project.build.sourceEncoding}</encoding.source>
-                                <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
-                                <java.source>${maven.compiler.source}</java.source>
-                                <java.target>${maven.compiler.target}</java.target>
-                            </additionalProperties>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-    </build>
-    <packaging>maven-plugin</packaging>
-
 
 </project>

@@ -21,6 +21,7 @@ public class EventServiceImplem implements EventService{
     @Override
     public List<Event> getAll() {
         return eventRep.findAllByOrderById();
+
     }
 
     @Override

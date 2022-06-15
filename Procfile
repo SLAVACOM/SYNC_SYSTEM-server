@@ -1,1 +1,0 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/sync-server-1.0.jar
